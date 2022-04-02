@@ -11,7 +11,8 @@ import Social from "../../components/Social";
 const menuItem = [
   { icon: "fa-home", menuName: "Home" },
   { icon: "fa-bookmark", menuName: "INSTRUCTION" },
-  { icon: "fa-step-forward", menuName: "STEPS" },
+  { icon: "fa-info", menuName: "BUTTON" },
+  //{ icon: "fa-step-forward", menuName: "STEPS" },
 
 
   // { icon: "fa-envelope-open", menuName: "Contact" },

@@ -2,19 +2,23 @@ import React from "react";
 
 const educationContent = [
   {
-    steps: "1. Click on the first intersection",
-    details: `  Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore
-        adipisicing elit`,
+    steps: "4. Save Intersections",
+    details: `If you want to save this found intersection as start or end intersection, 
+    click on “Save as Start Intersection” or “Save as End Intersection” button. 
+    `,
   },
   {
-    steps: "2. Click on the first intersection",
-    details: `Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol
-        elit, tempor incididunt`,
+    steps: "5. Set Intersections Using Mouse",
+    details: `Besides, the start and end intersections can be set by mouse click. 
+    The way to do that is to mouse click on a intersection and click on 
+    “Save as Start Intersection” or “Save as End Intersection” button.
+
+    `,
   },
   {
-    steps: "3. Click on the first intersection ",
-    details: `Lorem ipsum dolor sit amet, tempor incididunt ut laboreconsectetur
-        elit, sed do eiusmod tempor duntt`,
+    steps: "6. Find Route",
+    details: `After both start and end intersections are set, click on
+     “Navigate” button to see the recommended route.`,
   },
 ];
 
@@ -24,7 +28,7 @@ const Education = () => {
       {educationContent.map((val, i) => (
         <li key={i}>
           <div className="icon">
-            <i className="fa fa-briefcase"></i>
+            <i className="fa-arrow-right"></i>
           </div>
           <h5 className="poppins-font text-uppercase">
             {val.steps}

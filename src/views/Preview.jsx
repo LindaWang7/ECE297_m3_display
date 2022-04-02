@@ -1,15 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import darkButton from '../components/img/dark_button.png';
+import lightButton from '../components/img/light_button.png';
 
 const previewDemo = [
   {
-    img: "dark",
+    img: darkButton,
     title: "Dark Instruction",
     routerPath: "/home-dark",
     delayAnimation: "50",
   },
   {
-    img: "light",
+    img: lightButton,
     title: "Light Instruction",
     routerPath: "/home-light",
     delayAnimation: "",
@@ -42,7 +44,11 @@ const Preview = () => {
                   <div>
                     <Link to={val.routerPath} target="_blank" rel="noreferrer">
                       <img
-                        src={`img/intro/${val.img}.png`}
+                        //src={darkButton}
+                        src={`${val.img}`}
+                        //src={'ECE297_m3_display../components/img/dark_button.png'}
+                        //darkButton
+                        //src={`.ECE297_m3_display/img/intro/${val.img}.png`}
                         alt="demo"
                         className="img-responsive screenshot"
                       />

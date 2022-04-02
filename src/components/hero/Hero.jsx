@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
 import Index from "../../components/about/index";
+import heroImage from "../img/dark.png"
+import cancleIcon from "../img/cancel.svg"
 
 const heroContent = {
   heroImage: "img/hero/dark.jpg",
@@ -24,8 +26,7 @@ const Hero = () => {
         <div
           className="col-lg-4 bg position-fixed d-none d-lg-block"
           style={{
-            backgroundImage: `url(${
-              process.env.PUBLIC_URL + heroContent.heroImage
+            backgroundImage: `url(${heroImage
             })`,
           }}
         ></div>
@@ -36,6 +37,7 @@ const Hero = () => {
               className="img-fluid main-img-mobile d-sm-block d-lg-none"
               alt="hero man"
             />
+
             <h1 className="text-uppercase poppins-font">
               We're {heroContent.heroTitleName}.
               <span>{heroContent.heroDesignation}</span>
@@ -61,7 +63,7 @@ const Hero = () => {
       >
         <div>
           <button className="close-modal" onClick={toggleModalOne}>
-            <img src="/img/cancel.svg" alt="close icon" />
+            <img src={cancleIcon} alt="close icon" />
           </button>
           {/* End close icon */}
 
